@@ -28,9 +28,9 @@ jobs:
       - name: Install Hugo
         run: |
           echo $(cat /etc/*-release)
-          sudo apt-get install hugo
-          #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          #brew install hugo
+          #sudo apt-get install hugo
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install hugo
           echo $(hugo version)
           hugo mod init github.com/zerostaticthemes/hugo-serif-theme
           echo $(hugo mod graph)
