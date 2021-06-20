@@ -30,7 +30,9 @@ jobs:
       - name: Install Hugo and create a website
         run: |
           echo $(cat /etc/*-release)
-          sudo apt-get install hugo --channel=extended
+          #sudo apt-get install hugo
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install hugo
           echo $(hugo version)
           echo $(pwd)
           hugo
