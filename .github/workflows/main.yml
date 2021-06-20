@@ -19,7 +19,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    #runs-on: ubuntu-20.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,13 +28,15 @@ jobs:
       - name: Install Hugo
         run: |
           echo $(cat /etc/*-release)
-          #sudo apt-get install hugo
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          brew install hugo
+          sudo apt-get install hugo
+          #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          #brew install hugo
           echo $(hugo version)
-          hugo mod init github.com/zerostaticthemes/hugo-serif-theme
+          hugo mod init hugo-serif-theme
+          #hugo mod init github.com/zerostaticthemes/hugo-serif-theme
+          echo $(hugo mod graph)
 
-      - name: Create a website with Hugo
+      - name: Create website with Hugo
         run: |
           echo $(pwd)
           hugo
