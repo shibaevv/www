@@ -26,18 +26,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a set of commands using the runners shell
-      - name: Install Hugo and create a website
+      - name: Install Hugo
         run: |
           echo $(cat /etc/*-release)
           #sudo apt-get install hugo
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install hugo
           echo $(hugo version)
+          hugo mod init github.com/zerostaticthemes/hugo-serif-theme
+
+      - name: Create a website with Hugo
+        run: |
           echo $(pwd)
           hugo
           echo $(ls -al ./public)
-      - name: Deploy to S3
+      - name: Deploy website to S3
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read
