@@ -3,11 +3,11 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Totem Software"
 themesDir = "themes"
-theme = "hugo-serif-theme"
+theme = "github.com/zerostaticthemes/hugo-serif-theme"
 
 [module]
   [[module.imports]]
-    path = "hugo-serif-theme"
+    path = "github.com/zerostaticthemes/hugo-serif-theme"
 
 [params]
   google_analytics_id = ""

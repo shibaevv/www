@@ -32,8 +32,7 @@ jobs:
           #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           #brew install hugo
           echo $(hugo version)
-          hugo mod init hugo-serif-theme
-          #hugo mod init github.com/zerostaticthemes/hugo-serif-theme
+          hugo mod init github.com/zerostaticthemes/hugo-serif-theme
           echo $(hugo mod graph)
 
       - name: Create website with Hugo
