@@ -33,7 +33,9 @@ jobs:
           brew install hugo
           echo $(hugo version)
           git submodule add https://github.com/zerostaticthemes/hugo-serif-theme themes/hugo-serif-theme
-          echo $(hugo mod graph)
+          find themes/hugo-serif-theme/content/services/ -type f -not -name '_index.md' -delete
+          find themes/hugo-serif-theme/content/team/ -type f -not -name '_index.md' -delete
+          find themes/hugo-serif-theme/static/images/team/ -type f -not -name 'default.*' -delete
 
       - name: Create website with Hugo
         run: |
