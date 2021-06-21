@@ -32,6 +32,7 @@ jobs:
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install hugo
           echo $(hugo version)
+          git config advice.addIgnoredFile false
           git submodule add https://github.com/zerostaticthemes/hugo-serif-theme themes/hugo-serif-theme
           find themes/hugo-serif-theme/content/services/ -type f -not -name '_index.md' -delete
           find themes/hugo-serif-theme/content/team/ -type f -not -name '_index.md' -delete
