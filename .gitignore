@@ -3,3 +3,5 @@
 /**/_gen/
 /public/
 /go.mod
+/.gitmodules
+/themes/hugo-serif-theme/
