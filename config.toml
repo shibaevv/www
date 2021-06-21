@@ -3,11 +3,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Totem Software"
 themesDir = "themes"
-theme = "github.com/zerostaticthemes/hugo-serif-theme"
-
-[module]
-  [[module.imports]]
-    path = "github.com/zerostaticthemes/hugo-serif-theme"
+theme = "hugo-serif-theme"
 
 [params]
   google_analytics_id = ""
@@ -56,6 +52,7 @@ gzip = true
 
 [[deployment.matchers]]
 pattern = "^.+\\.(png|jpg)$"
+cacheControl = "must-revalidate, no-cache, max-age=0, no-transform, public"
 gzip = true
 
 [[deployment.matchers]]

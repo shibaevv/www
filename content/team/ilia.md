@@ -9,6 +9,6 @@ promoted: true
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Ilia is an a highly experienced Data Scientist and Software Developer who has delivered a range of successful projects for State and Federal government clients. His specialities include health data analytics, natural language processing, and deploying machine learning systems in production.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Specialties: Python, C++, Rust, Machine learning, Web APIs for machine learning services, web application development, cloud services (AWS, Azure).

@@ -9,6 +9,8 @@ promoted: true
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Valeri is Senior Developer/Solution Architect with solid scientific background (M.S. in nuclear physics) and highly developed analytical and technical skills.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+His main areas of interest include distributed and local database applications, data acquisition and control for demanding real-time applications, design and implementation of human-computer interface, cross-platform development. Good written and oral communication skills perfected by working in international environments.
+
+Specialties: Application Development, Java EE/SE, Databases (Oracle, MS-SQL, Sybase, DB2, MySQL), XML, XSD, XSLT, Web development
