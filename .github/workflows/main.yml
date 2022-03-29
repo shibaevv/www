@@ -34,9 +34,9 @@ jobs:
           echo $(hugo version)
           git config advice.addIgnoredFile false
           git clone https://github.com/zerostaticthemes/hugo-serif-theme themes/hugo-serif-theme
-          find themes/hugo-serif-theme/content/services/ -type f -not -name '_index.md' -delete
-          find themes/hugo-serif-theme/content/team/ -type f -not -name '_index.md' -delete
-          find themes/hugo-serif-theme/static/images/team/ -type f -not -name 'default.*' -delete
+          find themes/hugo-serif-theme/layouts/services/ -type f -not -name '_index.md' -delete
+          find themes/hugo-serif-theme/layouts/team/ -type f -not -name '_index.md' -delete
+          #find themes/hugo-serif-theme/static/images/team/ -type f -not -name 'default.*' -delete
 
       - name: Create website with Hugo
         run: |
